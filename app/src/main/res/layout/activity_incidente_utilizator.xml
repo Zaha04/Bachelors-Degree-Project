@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context=".Incidente_utilizator">
+
+    <TextView
+        android:id="@+id/incercam_me"
+        android:layout_width="118dp"
+        android:layout_height="274dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/salsa"
+        android:gravity="top"
+        android:text="@string/incercam_me"
+        android:textAppearance="@style/incercam_me"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.006" />
+
+    <View
+        android:id="@+id/marginalia_"
+        android:layout_width="200dp"
+        android:layout_height="202dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/marginalia_location_access_1"
+        android:elevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.653"
+        app:layout_constraintStart_toEndOf="@+id/incercam_me"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.071" />
+
+    <View
+        android:id="@+id/postare_incident"
+        android:layout_width="69dp"
+        android:layout_height="65dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/ellipse_incidente"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/incercam_me"
+        app:layout_constraintVertical_bias="0.143" />
+
+    <View
+        android:id="@+id/icons8_bang"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/icon_incident"
+        app:layout_constraintBottom_toBottomOf="@+id/postare_incident"
+        app:layout_constraintEnd_toEndOf="@+id/postare_incident"
+        app:layout_constraintStart_toStartOf="@+id/postare_incident"
+        app:layout_constraintTop_toTopOf="@+id/postare_incident" />
+
+    <TextView
+        android:id="@+id/apasa_pentr"
+        android:layout_width="122dp"
+        android:layout_height="75dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="top"
+        android:text="@string/apasa_pentr"
+        android:textAppearance="@style/apasa_pentr"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/postare_incident"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/titlu_incident1"
+        android:layout_width="226dp"
+        android:layout_height="44dp"
+        android:fontFamily="@font/salsa"
+        android:hint="Strada"
+        android:textColor="#171202"
+        android:textColorHint="#171202"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.913"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/marginalia_"
+        app:layout_constraintVertical_bias="0.149"
+        tools:textColorHint="#171202" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/descriere"
+        android:layout_width="230dp"
+        android:layout_height="199dp"
+        android:layout_marginTop="24dp"
+        android:hint="Descriere"
+        android:textColor="#171202"
+        android:textColorHint="#171202"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toEndOf="@+id/apasa_pentr"
+        app:layout_constraintTop_toBottomOf="@+id/titlu_incident1"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

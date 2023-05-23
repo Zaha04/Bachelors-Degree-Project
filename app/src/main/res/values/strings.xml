@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- main strings -->
+
+    <string name="app_name">Page 1</string>
+    <string name="register">Register</string>
+    <string name="some_id">21:40</string>
+    <string name="login">Login</string>
+
+    <string name="vezi_locuri">Vezi locuri de Parcare</string>
+    <string name="calitatea_a">Calitatea aerului</string>
+    <string name="temperatura">Temperatura actuală</string>
+    <string name="buletin_dig">Buletin digital</string>
+    <string name="buletin_vac">Buletin vaccinare</string>
+    <string name="raporteaza_">Raportează o problemă sau un incident</string>
+    <string name="analizele_t">Analizele tale</string>
+    <string name="bun_venit_i">  Bun venit în Link Brasov!</string>
+    <string name="editeaza_ti">Editează-ți profilul</string>
+
+    <string name="log_out">Log Out</string>
+    <string name="register1">Register</string>
+    <string name="hai_sa_ne_c">Hai să ne cunoastem mai bine!</string>
+    <string name="editeaza_ti1">Editează-ti personajul!</string>
+    <string name="esti_aproap">Ești aproape gata!</string>
+    <string name="salveaza_ti">Salvează-ți informațiile</string>
+    <string name="astazi_sunt">Astăzi sunt:</string>
+    <string name="o_zi_faina_">O zi faină pentru o plimbare!</string>
+    <string name="incercam_me">Încercăm mereu să facem un oraș mai bun, astfel, unindu-ne vom avansa mai repede</string>
+
+    <string name="apasa_pentr">Apasă pentru a raporta un incident!</string>
+    <string name="ne_bucuram_">Ne bucurăm ca te-ai întors!</string>
+    <string name="hai_inapoi_">Hai înapoi!</string>
+    <string name="incearca_sa">Încearcă să respiri mai sănătos prin mijloacele electrice de transport public</string>
+    <string name="nivelul_de_">Nivelul de dioxid de carbon:</string>
+    <string name="mergi_cat_m">Mergi cât mai mult pe jos sau cu bicicleta pentru a salva natura</string>
+    <string name="pentru_a_nu">Pentru a nu mai arunca hainele prin casă atunci când pierzi portofelul :)</string>
+    <string name="nume">Nume</string>
+    <string name="prenume">Prenume</string>
+    <string name="cnp">CNP</string>
+    <string name="serie">Serie</string>
+    <string name="nr_">Nr.</string>
+    <string name="cu_placere_">Cu plăcere!</string>
+    <string name="intors">Ne bucurăm că-ți pasă de sănătatea ta și a celor in jur!</string>
+    <string name="vaccinat_">Vaccinat:</string>
+    <string name="daca_nu_te_">Dacă nu te-ai vaccinat, fă-o cât mai repede pentru a reveni la normalitate</string>
+
+    <string name="analize">Ne bucurăm ca te interesează starea ta de sănătate,vei găsi în unele pagini niște sfaturi pentru a fi mai sănătos pe zi ce trece</string>
+    <string name="descarca_an">Descarcă analize</string>
+    <string name="un_mar_pe_z">Un măr pe zi te ferește de doctor!</string>
+    <string name="realizeaza_">Realizează o programare la medicul tău</string>
+    <string name="speram_ca_n">Sperăm ca nu este nimic grav și ca te vei însănătoși cât mai repede!</string>
+    <string name="ziua_">Ziua:</string>
+    <string name="ora_intre_9">Ora (între (9:00 si 17:00):</string>
+    <string name="nume_programare">Nume</string>
+    <string name="prenume_programare">Prenume:</string>
+    <string name="pasteaza_o_">Păstrează o igienă corespunzătoare! Încearcă să faci cât mai multă mișcare și încearcă o alimentație cât mai corespunzătoare pentru a-ți atinge obiectivele și de a te bucura de tot ce e în jurul tău cât mai mult!</string>
+    <string name="nume_profil">Nume</string>
+    <string name="prenume_profil">Prenume</string>
+    <string name="ne_bucuram_profil">Ne bucurăm că ne ții la curent cu toate schimbările tale!</string>
+    <string name="loc1">Loc1</string>
+    <string name="status">Status</string>
+    <string name="liber">Liber</string>
+
+</resources>

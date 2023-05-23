@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context=".Calitatea_aerului">
+
+    <TextView
+        android:id="@+id/incearca_sa"
+        android:layout_width="263dp"
+        android:layout_height="216dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/salsa"
+        android:gravity="top"
+        android:text="@string/incearca_sa"
+        android:textAppearance="@style/incearca_sa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.108"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.005" />
+
+    <View
+        android:id="@+id/icons8_bus_"
+        android:layout_width="135dp"
+        android:layout_height="120dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bus"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.942"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.106" />
+
+    <TextView
+        android:id="@+id/nivelul_de_"
+        android:layout_width="256dp"
+        android:layout_height="32dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/salsa"
+        android:gravity="top"
+        android:text="@string/nivelul_de_"
+        android:textAppearance="@style/nivelul_de_"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.339"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/incearca_sa"
+        app:layout_constraintVertical_bias="0.14" />
+
+    <TextView
+        android:id="@+id/mergi_cat_m"
+        android:layout_width="225dp"
+        android:layout_height="106dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/salsa"
+        android:gravity="top"
+        android:text="@string/mergi_cat_m"
+        android:textAppearance="@style/mergi_cat_m"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nivelul_de_"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <View
+        android:id="@+id/icons8_bicy"
+        android:layout_width="61dp"
+        android:layout_height="53dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bicycle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mergi_cat_m"
+        app:layout_constraintTop_toBottomOf="@+id/nivelul_de_" />
+
+    <View
+        android:id="@+id/arrow_1"
+        android:layout_width="33dp"
+        android:layout_height="64dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/arrow_1"
+        android:elevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.398"
+        app:layout_constraintStart_toEndOf="@+id/mergi_cat_m"
+        app:layout_constraintTop_toBottomOf="@+id/icons8_bicy"
+        app:layout_constraintVertical_bias="0.027" />
+
+    <View
+        android:id="@+id/arrow_2"
+        android:layout_width="27dp"
+        android:layout_height="64dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/arrow_2"
+        app:layout_constraintBottom_toTopOf="@+id/icons8_walk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.184"
+        app:layout_constraintStart_toEndOf="@+id/arrow_1"
+        app:layout_constraintTop_toBottomOf="@+id/icons8_bicy"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/icons8_walk"
+        android:layout_width="65dp"
+        android:layout_height="62dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/walking"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mergi_cat_m"
+        app:layout_constraintTop_toBottomOf="@+id/arrow_1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

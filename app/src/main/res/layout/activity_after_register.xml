@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context=".After_register">
+
+    <TextView
+        android:id="@+id/esti_aproap"
+        android:layout_width="193dp"
+        android:layout_height="181dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/salsa"
+        android:gravity="top"
+        android:text="@string/esti_aproap"
+        android:textAppearance="@style/esti_aproap"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/view7"
+        android:layout_width="199dp"
+        android:layout_height="213dp"
+        android:background="@drawable/after_register"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/esti_aproap"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/ellipse_5"
+        android:layout_width="342dp"
+        android:layout_height="324dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/ellipse_after_register"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/esti_aproap"
+        app:layout_constraintVertical_bias="0.345" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/nume_after"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:fontFamily="@font/salsa"
+        android:hint="Nume"
+        android:textColor="#282603"
+        android:textColorHint="#282603"
+        app:layout_constraintBottom_toBottomOf="@+id/ellipse_5"
+        app:layout_constraintEnd_toEndOf="@+id/ellipse_5"
+        app:layout_constraintHorizontal_bias="0.761"
+        app:layout_constraintStart_toStartOf="@+id/ellipse_5"
+        app:layout_constraintTop_toTopOf="@+id/ellipse_5"
+        app:layout_constraintVertical_bias="0.211" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/prenume_after"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:fontFamily="@font/salsa"
+        android:hint="Prenume"
+        android:textColor="#282603"
+        android:textColorHint="#282603"
+        app:layout_constraintBottom_toBottomOf="@+id/ellipse_5"
+        app:layout_constraintEnd_toEndOf="@+id/ellipse_5"
+        app:layout_constraintHorizontal_bias="0.761"
+        app:layout_constraintStart_toStartOf="@+id/ellipse_5"
+        app:layout_constraintTop_toBottomOf="@+id/nume_after"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/cnp_after"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:fontFamily="@font/salsa"
+        android:hint="CNP"
+        android:textColor="#282603"
+        android:textColorHint="#282603"
+        app:layout_constraintBottom_toBottomOf="@+id/ellipse_5"
+        app:layout_constraintEnd_toEndOf="@+id/ellipse_5"
+        app:layout_constraintHorizontal_bias="0.761"
+        app:layout_constraintStart_toStartOf="@+id/ellipse_5"
+        app:layout_constraintTop_toBottomOf="@+id/prenume_after"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/serie_buletin"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:fontFamily="@font/salsa"
+        android:hint="Serie"
+        android:textColor="#282603"
+        android:textColorHint="#282603"
+        app:layout_constraintBottom_toBottomOf="@+id/ellipse_5"
+        app:layout_constraintEnd_toEndOf="@+id/ellipse_5"
+        app:layout_constraintStart_toStartOf="@+id/ellipse_5"
+        app:layout_constraintTop_toBottomOf="@+id/cnp_after"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/numar_buletin"
+        android:layout_width="249dp"
+        android:layout_height="43dp"
+        android:fontFamily="@font/salsa"
+        android:hint="Număr"
+        android:textColor="#282603"
+        android:textColorHint="#282603"
+        app:layout_constraintBottom_toBottomOf="@+id/ellipse_5"
+        app:layout_constraintEnd_toEndOf="@+id/ellipse_5"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="@+id/ellipse_5"
+        app:layout_constraintTop_toBottomOf="@+id/serie_buletin"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/save_info"
+        android:layout_width="188dp"
+        android:layout_height="36dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/rectangle_after_register"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ellipse_5"
+        app:layout_constraintVertical_bias="0.272" />
+
+    <TextView
+        android:id="@+id/salveaza_ti"
+        android:layout_width="144dp"
+        android:layout_height="17dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/salsa"
+        android:gravity="top"
+        android:text="@string/salveaza_ti"
+        android:textAppearance="@style/salveaza_ti"
+        app:layout_constraintBottom_toBottomOf="@+id/save_info"
+        app:layout_constraintEnd_toEndOf="@+id/save_info"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/save_info"
+        app:layout_constraintTop_toTopOf="@+id/save_info"
+        app:layout_constraintVertical_bias="0.526" />
+
+
+    <View
+        android:id="@+id/view12"
+        android:layout_width="34dp"
+        android:layout_height="30dp"
+        android:background="@drawable/checkmark"
+        app:layout_constraintBottom_toBottomOf="@+id/save_info"
+        app:layout_constraintEnd_toStartOf="@+id/salveaza_ti"
+        app:layout_constraintStart_toStartOf="@+id/save_info"
+        app:layout_constraintTop_toTopOf="@+id/save_info" />
+</androidx.constraintlayout.widget.ConstraintLayout>

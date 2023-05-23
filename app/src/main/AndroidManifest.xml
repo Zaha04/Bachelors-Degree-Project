@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.licenta6">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Licenta6">
+        <activity android:name=".Problema_sanatate"></activity>
+        <activity android:name=".Parcare_lista" />
+        <activity android:name=".Editare_profil" />
+        <activity android:name=".Programare" />
+        <activity android:name=".Analize_medicale" />
+        <activity android:name=".Buletin_vaccinare" />
+        <activity android:name=".Buletin_digital" />
+        <activity android:name=".Calitatea_aerului" />
+        <activity android:name=".Login" />
+        <activity android:name=".Incidente_utilizator" />
+        <activity android:name=".Temperatura" />
+        <activity android:name=".After_register" />
+        <activity android:name=".Register" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

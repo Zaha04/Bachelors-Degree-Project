@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context=".Buletin_digital">
+
+    <TextView
+        android:id="@+id/pentru_a_nu"
+        android:layout_width="242dp"
+        android:layout_height="207dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/salsa"
+        android:gravity="top"
+        android:text="@string/pentru_a_nu"
+        android:textAppearance="@style/pentru_a_nu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <View
+        android:id="@+id/icons8_vacu"
+        android:layout_width="167dp"
+        android:layout_height="201dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/vacuum"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/pentru_a_nu"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.028" />
+
+    <TextView
+        android:id="@+id/nume"
+        android:layout_width="78dp"
+        android:layout_height="34dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/salsa"
+        android:gravity="top"
+        android:text="@string/nume"
+        android:textAppearance="@style/nume"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.195"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pentru_a_nu"
+        app:layout_constraintVertical_bias="0.132" />
+
+    <TextView
+        android:id="@+id/prenume"
+        android:layout_width="122dp"
+        android:layout_height="34dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/salsa"
+        android:gravity="top"
+        android:text="@string/prenume"
+        android:textAppearance="@style/prenume"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.155"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nume"
+        app:layout_constraintVertical_bias="0.103" />
+
+    <TextView
+        android:id="@+id/cnp"
+        android:layout_width="79dp"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/salsa"
+        android:gravity="top"
+        android:text="@string/cnp"
+        android:textAppearance="@style/cnp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.195"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prenume"
+        app:layout_constraintVertical_bias="0.161" />
+
+    <TextView
+        android:id="@+id/serie"
+        android:layout_width="68dp"
+        android:layout_height="34dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/salsa"
+        android:gravity="top"
+        android:text="@string/serie"
+        android:textAppearance="@style/serie"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.218"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cnp"
+        app:layout_constraintVertical_bias="0.158" />
+
+    <TextView
+        android:id="@+id/nr_"
+        android:layout_width="42dp"
+        android:layout_height="34dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/salsa"
+        android:gravity="top"
+        android:text="@string/nr_"
+        android:textAppearance="@style/nr_"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/serie"
+        app:layout_constraintVertical_bias="0.223" />
+
+    <TextView
+        android:id="@+id/cu_placere_"
+        android:layout_width="153dp"
+        android:layout_height="34dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/salsa"
+        android:gravity="top"
+        android:text="@string/cu_placere_"
+        android:textAppearance="@style/cu_placere_"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nr_" />
+
+    <View
+        android:id="@+id/icons8_smil"
+        android:layout_width="52dp"
+        android:layout_height="51dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/smiling_face"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toEndOf="@+id/cu_placere_"
+        app:layout_constraintTop_toBottomOf="@+id/icons8_vacu"
+        app:layout_constraintVertical_bias="0.909" />
+
+    <TextView
+        android:id="@+id/nume_read"
+        android:layout_width="147dp"
+        android:layout_height="32dp"
+        android:fontFamily="@font/salsa"
+        android:text="TextView"
+        android:textColor="#282603"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.272"
+        app:layout_constraintStart_toEndOf="@+id/nume"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.41" />
+
+    <TextView
+        android:id="@+id/prenume_read"
+        android:layout_width="147dp"
+        android:layout_height="32dp"
+        android:fontFamily="@font/salsa"
+        android:text="TextView"
+        android:textColor="#282603"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.092"
+        app:layout_constraintStart_toEndOf="@+id/prenume"
+        app:layout_constraintTop_toBottomOf="@+id/nume_read"
+        app:layout_constraintVertical_bias="0.102" />
+
+    <TextView
+        android:id="@+id/cnp_read"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginBottom="256dp"
+        android:fontFamily="@font/salsa"
+        android:text="TextView"
+        android:textColor="#282603"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.266"
+        app:layout_constraintStart_toEndOf="@+id/cnp"
+        app:layout_constraintTop_toBottomOf="@+id/prenume_read"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/serie_read"
+        android:layout_width="147dp"
+        android:layout_height="32dp"
+        android:fontFamily="@font/salsa"
+        android:text="TextView"
+        android:textColor="#282603"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.272"
+        app:layout_constraintStart_toEndOf="@+id/serie"
+        app:layout_constraintTop_toBottomOf="@+id/cnp_read"
+        app:layout_constraintVertical_bias="0.169" />
+
+    <TextView
+        android:id="@+id/numar_read"
+        android:layout_width="147dp"
+        android:layout_height="32dp"
+        android:fontFamily="@font/salsa"
+        android:text="TextView"
+        android:textColor="#282603"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.357"
+        app:layout_constraintStart_toEndOf="@+id/nr_"
+        app:layout_constraintTop_toBottomOf="@+id/serie_read"
+        app:layout_constraintVertical_bias="0.233" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- main styles -->
+
+	<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+		<item name="colorPrimary">@color/colorPrimary</item>
+		<item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+		<item name="colorAccent">@color/colorAccent</item>
+	</style>
+
+	<style name="register">
+		<item name="android:textSize">
+			10sp
+		</item>
+		<item name="android:textColor">
+			#000000
+		</item>
+	</style>
+	<style name="some_id">
+
+		<item name="android:textSize">
+			12sp
+		</item>
+
+		<item name="android:textColor">
+			#000000
+		</item>
+
+		<item name="android:shadowColor">
+			#40000000
+		</item>
+
+		<item name="android:shadowDx">
+			0
+		</item>
+
+		<item name="android:shadowDy">
+			4
+		</item>
+
+		<item name="android:shadowRadius">
+			4
+		</item>
+
+	</style>
+	<style name="login">
+
+		<item name="android:textSize">
+			10sp
+		</item>
+
+		<item name="android:textColor">
+			#000000
+		</item>
+
+	</style>
+
+	<style name="vezi_locuri">
+
+		<item name="android:textSize">
+			18sp
+		</item>
+
+		<item name="android:textColor">
+			#000000
+		</item>
+
+	</style>
+	<style name="calitatea_a">
+
+		<item name="android:textSize">
+			8sp
+		</item>
+
+		<item name="android:textColor">
+			#000000
+		</item>
+
+	</style>
+	<style name="temperatura">
+
+		<item name="android:textSize">
+			8sp
+		</item>
+
+		<item name="android:textColor">
+			#000000
+		</item>
+
+	</style>
+	<style name="buletin_dig">
+
+		<item name="android:textSize">
+			8sp
+		</item>
+
+		<item name="android:textColor">
+			#000000
+		</item>
+
+	</style>
+	<style name="buletin_vac">
+
+		<item name="android:textSize">
+			8sp
+		</item>
+
+		<item name="android:textColor">
+			#000000
+		</item>
+
+	</style>
+	<style name="raporteaza_">
+
+		<item name="android:textSize">
+			10sp
+		</item>
+
+		<item name="android:textColor">
+			#000000
+		</item>
+
+	</style>
+	<style name="analizele_t">
+
+		<item name="android:textSize">
+			10sp
+		</item>
+
+		<item name="android:textColor">
+			#000000
+		</item>
+
+	</style>
+	<style name="bun_venit_i">
+
+		<item name="android:textSize">
+			23sp
+		</item>
+
+		<item name="android:textColor">
+			#000000
+		</item>
+
+	</style>
+	<style name="editeaza_ti">
+
+		<item name="android:textSize">
+			8sp
+		</item>
+
+		<item name="android:textColor">
+			#000000
+		</item>
+
+		<item name="android:shadowColor">
+			#40000000
+		</item>
+
+		<item name="android:shadowDx">
+			0
+		</item>
+
+		<item name="android:shadowDy">
+			4
+		</item>
+
+		<item name="android:shadowRadius">
+			4
+		</item>
+
+	</style>
+	<style name="log_out">
+
+		<item name="android:textSize">
+			10sp
+		</item>
+
+		<item name="android:textColor">
+			#000000
+		</item>
+
+	</style>
+
+	<style name="register1">
+
+		<item name="android:textSize">
+			18sp
+		</item>
+
+		<item name="android:textColor">
+			#000000
+		</item>
+
+	</style>
+	<style name="hai_sa_ne_c">
+
+		<item name="android:textSize">
+			23sp
+		</item>
+
+		<item name="android:textColor">
+			#000000
+		</item>
+
+	</style>
+	<style name="editeaza_ti1">
+
+		<item name="android:textSize">
+			20sp
+		</item>
+
+		<item name="android:textColor">
+			#000000
+		</item>
+
+	</style>
+	<style name="esti_aproap">
+
+		<item name="android:textSize">
+			50sp
+		</item>
+
+		<item name="android:textColor">
+			#000000
+		</item>
+
+	</style>
+	<style name="salveaza_ti">
+
+		<item name="android:textSize">
+			12sp
+		</item>
+
+		<item name="android:textColor">
+			#000000
+		</item>
+
+	</style>
+	<style name="astazi_sunt">
+
+		<item name="android:textSize">
+			30sp
+		</item>
+
+		<item name="android:textColor">
+			#000000
+		</item>
+
+	</style>
+	<style name="o_zi_faina_">
+
+		<item name="android:textSize">
+			15sp
+		</item>
+
+		<item name="android:textColor">
+			#000000
+		</item>
+
+	</style>
+	<style name="incercam_me">
+
+		<item name="android:textSize">
+			20sp
+		</item>
+
+		<item name="android:textColor">
+			#000000
+		</item>
+
+		<item name="android:shadowColor">
+			#40000000
+		</item>
+
+		<item name="android:shadowDx">
+			0
+		</item>
+
+		<item name="android:shadowDy">
+			4
+		</item>
+
+		<item name="android:shadowRadius">
+			4
+		</item>
+
+	</style>
+	<style name="apasa_pentr">
+
+		<item name="android:textSize">
+			20sp
+		</item>
+
+		<item name="android:textColor">
+			#000000
+		</item>
+
+	</style>
+	<style name="ne_bucuram_">
+
+		<item name="android:textSize">
+			50sp
+		</item>
+
+		<item name="android:textColor">
+			#000000
+		</item>
+
+	</style>
+	<style name="hai_inapoi_">
+
+		<item name="android:textSize">
+			20sp
+		</item>
+
+		<item name="android:textColor">
+			#000000
+		</item>
+
+	</style>
+
+	<style name="incearca_sa">
+
+		<item name="android:textSize">
+			35sp
+		</item>
+
+		<item name="android:textColor">
+			#000000
+		</item>
+
+	</style>
+	<style name="nivelul_de_">
+
+		<item name="android:textSize">
+			20sp
+		</item>
+
+		<item name="android:textColor">
+			#000000
+		</item>
+
+	</style>
+	<style name="mergi_cat_m">
+
+		<item name="android:textSize">
+			20sp
+		</item>
+
+		<item name="android:textColor">
+			#000000
+		</item>
+
+	</style>
+	<style name="pentru_a_nu">
+
+		<item name="android:textSize">
+			29sp
+		</item>
+
+		<item name="android:textColor">
+			#000000
+		</item>
+
+	</style>
+	<style name="nume">
+
+		<item name="android:textSize">
+			29sp
+		</item>
+
+		<item name="android:textColor">
+			#000000
+		</item>
+
+	</style>
+	<style name="prenume">
+
+		<item name="android:textSize">
+			29sp
+		</item>
+
+		<item name="android:textColor">
+			#000000
+		</item>
+
+	</style>
+	<style name="cnp">
+
+		<item name="android:textSize">
+			29sp
+		</item>
+
+		<item name="android:textColor">
+			#000000
+		</item>
+
+	</style>
+	<style name="serie">
+
+		<item name="android:textSize">
+			29sp
+		</item>
+
+		<item name="android:textColor">
+			#000000
+		</item>
+
+	</style>
+	<style name="nr_">
+
+		<item name="android:textSize">
+			29sp
+		</item>
+
+		<item name="android:textColor">
+			#000000
+		</item>
+
+	</style>
+	<style name="cu_placere_">
+
+		<item name="android:textSize">
+			29sp
+		</item>
+
+		<item name="android:textColor">
+			#000000
+		</item>
+
+	</style>
+	<style name="intors">
+
+		<item name="android:textSize">
+			29sp
+		</item>
+
+		<item name="android:textColor">
+			#000000
+		</item>
+
+	</style>
+	<style name="vaccinat_">
+
+		<item name="android:textSize">
+			29sp
+		</item>
+
+		<item name="android:textColor">
+			#000000
+		</item>
+
+		<item name="android:shadowColor">
+			#40000000
+		</item>
+
+		<item name="android:shadowDx">
+			0
+		</item>
+
+		<item name="android:shadowDy">
+			4
+		</item>
+
+		<item name="android:shadowRadius">
+			4
+		</item>
+
+	</style>
+	<style name="daca_nu_te_">
+
+		<item name="android:textSize">
+			15sp
+		</item>
+
+		<item name="android:textColor">
+			#000000
+		</item>
+
+	</style>
+	<style name="analize">
+
+		<item name="android:textSize">
+			18sp
+		</item>
+
+		<item name="android:textColor">
+			#000000
+		</item>
+
+	</style>
+	<style name="descarca_an">
+
+		<item name="android:textSize">
+			10sp
+		</item>
+
+		<item name="android:textColor">
+			#000000
+		</item>
+
+	</style>
+	<style name="un_mar_pe_z">
+
+		<item name="android:textSize">
+			20sp
+		</item>
+
+		<item name="android:textColor">
+			#000000
+		</item>
+
+	</style>
+	<style name="realizeaza_">
+
+		<item name="android:textSize">
+			15sp
+		</item>
+
+		<item name="android:textColor">
+			#000000
+		</item>
+
+	</style>
+	<style name="speram_ca_n">
+
+		<item name="android:textSize">
+			15sp
+		</item>
+
+		<item name="android:textColor">
+			#000000
+		</item>
+
+	</style>
+	<style name="ziua_">
+
+		<item name="android:textSize">
+			15sp
+		</item>
+
+		<item name="android:textColor">
+			#000000
+		</item>
+
+	</style>
+	<style name="ora_intre_9">
+
+		<item name="android:textSize">
+			15sp
+		</item>
+
+		<item name="android:textColor">
+			#000000
+		</item>
+
+	</style>
+	<style name="nume_programare">
+
+		<item name="android:textSize">
+			15sp
+		</item>
+
+		<item name="android:textColor">
+			#000000
+		</item>
+
+	</style>
+	<style name="prenume_programare">
+
+		<item name="android:textSize">
+			15sp
+		</item>
+
+		<item name="android:textColor">
+			#000000
+		</item>
+
+	</style>
+
+	<style name="pasteaza_o_">
+
+		<item name="android:textSize">
+			15sp
+		</item>
+
+		<item name="android:textColor">
+			#000000
+		</item>
+
+	</style>
+	<style name="nume_profil">
+
+		<item name="android:textSize">
+			18sp
+		</item>
+
+		<item name="android:textColor">
+			#000000
+		</item>
+
+	</style>
+	<style name="prenume_profil">
+
+		<item name="android:textSize">
+			18sp
+		</item>
+
+		<item name="android:textColor">
+			#000000
+		</item>
+
+	</style>
+	<style name="ne_bucuram_profil">
+
+		<item name="android:textSize">
+			18sp
+		</item>
+
+		<item name="android:textColor">
+			#000000
+		</item>
+
+	</style>
+	<style name="loc1">
+
+		<item name="android:textSize">
+			12sp
+		</item>
+
+		<item name="android:textColor">
+			#000000
+		</item>
+
+	</style>
+	<style name="status">
+
+		<item name="android:textSize">
+			12sp
+		</item>
+
+		<item name="android:textColor">
+			#000000
+		</item>
+
+	</style>
+	<style name="liber">
+
+		<item name="android:textSize">
+			12sp
+		</item>
+
+		<item name="android:textColor">
+			#000000
+		</item>
+
+	</style>
+</resources>

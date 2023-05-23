@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="346dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginRight="40dp"
+    android:layout_marginBottom="20dp"
+    android:background="#FFF"
+    app:cardCornerRadius="20dp"
+    tools:context=".Adapter_parcare">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="346dp"
+        android:layout_height="wrap_content"
+        android:background="#FFF">
+
+        <View
+            android:id="@+id/rectangle_1"
+            android:layout_width="346dp"
+            android:layout_height="57dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/rectangle_parcare"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.271"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.023" />
+
+        <View
+            android:id="@+id/parking_view"
+            android:layout_width="53dp"
+            android:layout_height="47dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/parking_ticket"
+            app:layout_constraintBottom_toBottomOf="@+id/rectangle_1"
+            app:layout_constraintEnd_toEndOf="@+id/rectangle_1"
+            app:layout_constraintHorizontal_bias="0.064"
+            app:layout_constraintStart_toStartOf="@+id/rectangle_1"
+            app:layout_constraintTop_toTopOf="@+id/rectangle_1"
+            app:layout_constraintVertical_bias="0.6" />
+
+        <TextView
+            android:id="@+id/loc1"
+            android:layout_width="31dp"
+            android:layout_height="14dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:fontFamily="@font/salsa"
+            android:gravity="top"
+            android:text="@string/loc1"
+            android:textAppearance="@style/loc1"
+            app:layout_constraintBottom_toBottomOf="@+id/rectangle_1"
+            app:layout_constraintEnd_toEndOf="@+id/rectangle_1"
+            app:layout_constraintHorizontal_bias="0.072"
+            app:layout_constraintStart_toEndOf="@+id/parking_view"
+            app:layout_constraintTop_toTopOf="@+id/rectangle_1"
+            app:layout_constraintVertical_bias="0.384" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="44dp"
+            android:layout_height="17dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:fontFamily="@font/salsa"
+            android:gravity="top"
+            android:text="@string/status"
+            android:textAppearance="@style/status"
+            app:layout_constraintBottom_toBottomOf="@+id/rectangle_1"
+            app:layout_constraintEnd_toEndOf="@+id/rectangle_1"
+            app:layout_constraintHorizontal_bias="0.746"
+            app:layout_constraintStart_toEndOf="@+id/loc1"
+            app:layout_constraintTop_toTopOf="@+id/rectangle_1"
+            app:layout_constraintVertical_bias="0.128" />
+
+        <TextView
+            android:id="@+id/liber"
+            android:layout_width="74dp"
+            android:layout_height="21dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:fontFamily="@font/salsa"
+            android:gravity="top"
+            android:text="@string/liber"
+            android:textAppearance="@style/liber"
+            app:layout_constraintBottom_toBottomOf="@+id/rectangle_1"
+            app:layout_constraintEnd_toEndOf="@+id/rectangle_1"
+            app:layout_constraintHorizontal_bias="0.879"
+            app:layout_constraintStart_toEndOf="@+id/loc1"
+            app:layout_constraintTop_toBottomOf="@+id/status"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

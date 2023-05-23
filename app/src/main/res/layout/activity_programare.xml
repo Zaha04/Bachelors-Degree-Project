@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context=".Programare">
+
+    <TextView
+        android:id="@+id/speram_ca_n"
+        android:layout_width="200dp"
+        android:layout_height="90dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/salsa"
+        android:gravity="top"
+        android:text="@string/speram_ca_n"
+        android:textAppearance="@style/speram_ca_n"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <View
+        android:id="@+id/icons8_noti"
+        android:layout_width="193dp"
+        android:layout_height="184dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/icons8_notification_200_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.926"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.027" />
+
+    <View
+        android:id="@+id/rectangle_9"
+        android:layout_width="354dp"
+        android:layout_height="151dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/rectangle_programare"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.398" />
+
+    <TextView
+        android:id="@+id/ziua_"
+        android:layout_width="40dp"
+        android:layout_height="17dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/salsa"
+        android:gravity="top"
+        android:text="@string/ziua_"
+        android:textAppearance="@style/ziua_"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_9"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_9"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_9"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_9"
+        app:layout_constraintVertical_bias="0.118" />
+
+    <TextView
+        android:id="@+id/ora_intre_9"
+        android:layout_width="142dp"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/salsa"
+        android:gravity="top"
+        android:text="@string/ora_intre_9"
+        android:textAppearance="@style/ora_intre_9"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_9"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_9"
+        app:layout_constraintHorizontal_bias="0.108"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_9"
+        app:layout_constraintTop_toBottomOf="@+id/ziua_"
+        app:layout_constraintVertical_bias="0.132" />
+
+    <TextView
+        android:id="@+id/nume"
+        android:layout_width="47dp"
+        android:layout_height="19dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/salsa"
+        android:gravity="top"
+        android:text="@string/nume_programare"
+        android:textAppearance="@style/nume_programare"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_9"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_9"
+        app:layout_constraintHorizontal_bias="0.127"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_9"
+        app:layout_constraintTop_toBottomOf="@+id/ora_intre_9"
+        app:layout_constraintVertical_bias="0.207" />
+
+    <TextView
+        android:id="@+id/prenume_"
+        android:layout_width="70dp"
+        android:layout_height="18dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/salsa"
+        android:gravity="top"
+        android:text="@string/prenume_programare"
+        android:textAppearance="@style/prenume_programare"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_9"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_9"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_9"
+        app:layout_constraintTop_toBottomOf="@+id/nume"
+        app:layout_constraintVertical_bias="0.625" />
+
+    <TextView
+        android:id="@+id/pasteaza_o_"
+        android:layout_width="120dp"
+        android:layout_height="284dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/salsa"
+        android:gravity="top"
+        android:text="@string/pasteaza_o_"
+        android:textAppearance="@style/pasteaza_o_"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_9"
+        app:layout_constraintVertical_bias="0.296" />
+
+    <View
+        android:id="@+id/flame_1132_"
+        android:layout_width="170dp"
+        android:layout_height="63dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/flame_1132_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pasteaza_o_"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_9" />
+
+    <TextView
+        android:id="@+id/data_aleasa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/salsa"
+        android:text="Alege o data"
+        android:textColor="#171202"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_9"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_9"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toEndOf="@+id/ziua_"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_9"
+        app:layout_constraintVertical_bias="0.121" />
+
+    <TextView
+        android:id="@+id/ora_aleasa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ora"
+        android:textColor="#171202"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_9"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_9"
+        app:layout_constraintHorizontal_bias="0.335"
+        app:layout_constraintStart_toEndOf="@+id/ora_intre_9"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_9"
+        app:layout_constraintVertical_bias="0.401" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
