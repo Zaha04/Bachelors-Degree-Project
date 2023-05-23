@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>medical</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+   
+    <div><small class="form-text" style="color: rgb(0,0,0);font-size: 20px;font-family: Salsa, serif;margin-left: 50px;">Nume și prenume:</small><input type="text" id="nume_pacient" style="font-size: 20px;font-family: Salsa, serif;margin-left: 20px;" /></div>
+    <div><small class="form-text" style="color: rgb(0,0,0);font-size: 20px;font-family: Salsa, serif;margin-left: 50px;">E-mail</small><input type="text" id="e_mail_pacient" style="margin-left: 125px;font-size: 20px;font-family: Salsa, serif;" /></div>
+    <div><small class="form-text" style="color: rgb(0,0,0);font-size: 20px;font-family: Salsa, serif;margin-left: 50px;">CNP</small><input type="text" style="font-size: 20px;font-family: Salsa, serif;margin-left: 150px;" id="cnp_pacient" /></div>
+    <div><small class="form-text" style="font-size: 20px;font-family: Salsa, serif;color: rgb(0,0,0);margin-left: 50px;">Serie și Număr</small><input type="text" style="font-size: 20px;font-family: Salsa, serif;margin-left: 55px;" id="serie_pacient"/></div>
+    <div id="drop-area" style="width: 700px;text-align: left;height: 300px;margin-top: 200px;margin-left: 200px;">
+      <form class="my-form">
+          <input class="form-control form-control-lg" type="file" id="analize_input" multiple="">
+          <label class="button" for="analize_input">Label</label></form>
+          
+  </div>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-functions.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-storage.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-database.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyBEATtHjLZkRZfggfkqirQ-f2AMTtXohR0",
+    authDomain: "esp32-ce825.firebaseapp.com",
+    databaseURL: "https://esp32-ce825-default-rtdb.firebaseio.com",
+    projectId: "esp32-ce825",
+    storageBucket: "esp32-ce825.appspot.com",
+    messagingSenderId: "376284204215",
+    appId: "1:376284204215:web:e8303794a79414492dd132",
+    measurementId: "G-36EQTTPRYD"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  var database=firebase.database();
+ 
+  var upload=document.getElementById("analize_input");
+  
+  upload.addEventListener('change',function(e){
+var file =e.target.files[0];
+var storageRef=firebase.storage().ref('analize/'+file.name);
+storageRef.put(file);
+storageRef.getDownloadURL()
+.then((url) => {
+  // Insert url into an <img> tag to "download"
+ 
+ // some code..
+
+     window.alert("Ai transmis cu succes analizele!"); 
+     var postref=firebase.database().ref('Analize');
+     var newpostref=postref.push();
+     var nume1=document.getElementById("nume_pacient").value;
+  var email1=document.getElementById("e_mail_pacient").value;
+  var cnp1=document.getElementById("cnp_pacient").value;
+  var serie1=document.getElementById("serie_pacient").value;
+    
+     newpostref.set({
+url1:url,
+nume:nume1,
+email:email1,
+cnp:cnp1,
+serie:serie1
+
+     });
+  upload.value="";
+})
+.catch((error) => {
+  // A full list of error codes is available at
+  // https://firebase.google.com/docs/storage/web/handle-errors
+  switch (error.code) {
+    case 'storage/object-not-found':
+      // File doesn't exist
+      break;
+    case 'storage/unauthorized':
+      // User doesn't have permission to access the object
+      break;
+    case 'storage/canceled':
+      // User canceled the upload
+      break;
+
+    // ...
+
+    case 'storage/unknown':
+      // Unknown error occurred, inspect the server response
+      break;
+  }
+});
+
+  });
+
+</script>
+<script src="assets/js/medical.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

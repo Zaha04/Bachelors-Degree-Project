@@ -1,0 +1,35 @@
+#asistent_page {
+  background: rgb(247, 208, 82);
+  border-radius: 20px;
+  border-color: rgb(255, 255, 255);
+  border-top-color: rgb(255,;
+  border-right-color: 255,;
+  border-bottom-color: 255);
+  border-left-color: 255,;
+  width: 170px;
+  margin-left: 50px;
+}
+
+#medica_page {
+  width: 170px;
+  background: rgb(247, 208, 82);
+  border-color: rgb(255, 255, 255);
+  border-top-color: rgb(255,;
+  border-right-color: 255,;
+  border-bottom-color: 255);
+  border-left-color: 255,;
+  border-radius: 20px;
+  margin-left: 50px;
+}
+
+#analize_descarca {
+  background: rgb(247, 208, 82);
+  border-color: rgb(255, 255, 255);
+  border-top-color: rgb(255,;
+  border-right-color: 255,;
+  border-bottom-color: 255);
+  border-left-color: 255,;
+  border-radius: 20px;
+  margin-left: 50px;
+}
+

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>medical</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+  <a class="btn btn-primary" role="button" id="analize_descarca" href="descarcare_analize_page.html">Descarcă analize</a>
+    <ul id="list">
+      
+    </ul>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+         <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-functions.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-storage.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: "AIzaSyBEATtHjLZkRZfggfkqirQ-f2AMTtXohR0",
+        authDomain: "esp32-ce825.firebaseapp.com",
+        databaseURL: "https://esp32-ce825-default-rtdb.firebaseio.com",
+        projectId: "esp32-ce825",
+        storageBucket: "esp32-ce825.appspot.com",
+        messagingSenderId: "376284204215",
+        appId: "1:376284204215:web:e8303794a79414492dd132",
+        measurementId: "G-36EQTTPRYD"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+      
+      var stdNo=0;
+      function addItemsToList(nume1,prenume1,serie1,cnp1,numar1,data1,ora1,simptome1){
+        var ul=document.getElementById("list");
+
+        var header=document.createElement("h2");
+        var image=document.createElement("img");
+        var _nume=document.createElement("li");
+        
+        var _cnp=document.createElement("li");
+       
+        var _data=document.createElement("li");
+       
+        var _simptome=document.createElement("li");
+image.src="assets/img/programare_button.gif";
+image.setAttribute.width=image.style.height="50px";
+        header.innerHTML="Programare-"+(++stdNo);
+        
+        _nume.innerHTML='Nume și Prenume: '+nume1+" "+prenume1;
+        _cnp.innerHTML='CNP: '+cnp1 + ' Serie: '+serie1+' Numar '+numar1;
+        _data.innerHTML='Dată: '+data1+' Ora: '+ora1;
+        _simptome.innerHTML='Simptome: '+simptome1;
+        
+       
+                
+                
+        ul.appendChild(header);
+        ul.appendChild(image);
+        
+        ul.appendChild(_nume);
+        ul.appendChild(_cnp);
+        ul.appendChild(_data);
+        ul.appendChild(_simptome);
+      }
+
+      
+     function fetchData(){
+firebase.database().ref("Programari").once('value',function(snapshot){
+snapshot.forEach(
+  function(ChildSnapshot){
+    let  nume1=ChildSnapshot.val().nume;
+    let prenume1=ChildSnapshot.val().prenume;
+    let cnp1=ChildSnapshot.val().cnp;
+    let serie1=ChildSnapshot.val().serie;
+    let numar1=ChildSnapshot.val().numar;
+    let data1=ChildSnapshot.val().data;
+    let ora1=ChildSnapshot.val().ora;
+    let simptome1=ChildSnapshot.val().simptome;
+    addItemsToList(nume1,prenume1,serie1,cnp1,numar1,data1,ora1,simptome1);
+  }
+);
+});
+     }
+     window.onload(fetchData());
+      </script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
